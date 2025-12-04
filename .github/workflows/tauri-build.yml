@@ -36,7 +36,7 @@ jobs:
           deno-version: v2.x
 
       - name: Install Rust stable
-        uses: dtolnay/rust-action@stable
+        uses: dtolnay/rust-toolchain@stable
 
       - name: Add Rust target (macOS)
         if: matrix.platform == 'macos-latest'
